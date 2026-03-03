@@ -30,6 +30,7 @@ const ProfessionalSummaryForm = ({data, onChange, setResumeData}) => {
       setIsGenerating(false)
     }
   }
+  
 
   return (
     <div className='space-y-4'>
