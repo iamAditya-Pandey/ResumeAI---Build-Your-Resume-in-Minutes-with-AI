@@ -1,0 +1,43 @@
+/**
+ * @project ResumeAI
+ * @file index.css
+ * @author Aditya Pandey
+ * @github https://github.com/iamAditya-Pandey
+ * * Copyright (c) 2026 Aditya Pandey. All rights reserved.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+  
+  input:not([type="checkbox"]) {
+    @apply outline-none border border-slate-300 focus:ring-[3px] focus:ring-violet-100 focus:border-violet-500 rounded-lg transition-all duration-200;
+  }
+  
+  textarea {
+    @apply outline-none border border-slate-300 focus:ring-[3px] focus:ring-violet-100 focus:border-violet-500 rounded-lg resize-none transition-all duration-200;
+  }
+}
+
+@keyframes marqueeScroll {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+.marquee-inner {
+    animation: marqueeScroll 25s linear infinite;
+}
+
+.marquee-reverse {
+    animation-direction: reverse;
+}
