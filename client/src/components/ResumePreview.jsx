@@ -70,4 +70,5 @@ const ResumePreview = ({data, template, accentColor, classes = ""}) => {
   )
 }
 
+
 export default ResumePreview
