@@ -22,6 +22,7 @@ const Navbar = () => {
         navigate('/')
         dispatch(logout())
     }
+    
 
   return (
     <div className='shadow bg-white'>
