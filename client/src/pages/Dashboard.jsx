@@ -30,6 +30,7 @@ const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const navigate = useNavigate()
+  
 
   const loadAllResumes = async () =>{
     try {
