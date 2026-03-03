@@ -30,6 +30,7 @@ const Preview = () => {
       setIsLoading(false)
     }
   }
+  
 
   useEffect(()=>{
     loadResume()
