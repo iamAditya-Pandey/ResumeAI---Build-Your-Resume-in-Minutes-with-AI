@@ -103,6 +103,7 @@ export const getUserById = async (req, res) => {
 // controller for getting user resumes
 // GET: /api/users/resumes
 export const getUserResumes = async (req, res) => {
+
     try {
         const userId = req.userId;
 
@@ -112,4 +113,5 @@ export const getUserResumes = async (req, res) => {
     } catch (error) {
         return res.status(400).json({message: error.message})
     }
+    
 }
