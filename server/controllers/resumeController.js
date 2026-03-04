@@ -11,6 +11,7 @@ import Resume from "../models/Resume.js";
 import fs from 'fs';
 
 
+
 // controller for creating a new resume
 // POST: /api/resumes/create
 export const createResume = async (req, res) => {
@@ -43,6 +44,7 @@ export const deleteResume = async (req, res) => {
     } catch (error) {
         return res.status(400).json({message: error.message})
     }
+    
 }
 
 
