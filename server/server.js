@@ -15,7 +15,9 @@ import resumeRouter from "./routes/resumeRoutes.js";
 import aiRouter from "./routes/aiRoutes.js";
 
 const app = express();
+
 const PORT = process.env.PORT || 3000;
+
 
 // Database connection
 await connectDB()
