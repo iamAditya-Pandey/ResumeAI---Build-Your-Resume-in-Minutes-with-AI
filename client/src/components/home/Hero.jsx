@@ -1,4 +1,4 @@
-/**
+/*
  * @project ResumeAI
  * @file Hero.jsx
  * @author Aditya Pandey
@@ -29,9 +29,13 @@ const Hero = () => {
             <div className="min-h-screen pb-20 font-outfit">
                 {/* Navbar */}
                 <nav className="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
-                    <a href="https://prebuiltui.com">
-                        <img src="/logo.svg" alt="logo" className="h-11 w-auto"/>
-                    </a>
+                    
+                    {/* Cleaned Logo Link */}
+                    <Link to='/'>
+                        <div className="text-2xl font-black tracking-tight text-slate-800">
+                          ResumeAI<span className="text-violet-600">.</span>
+                        </div>
+                    </Link>
 
                     <div className="hidden md:flex items-center gap-8 transition duration-500 text-slate-800">
                         <a href="#" className="hover:text-violet-600 transition font-medium">Home</a>
@@ -115,7 +119,7 @@ const Hero = () => {
                         </button>
                     </div>
 
-                    {/*Increased size, distinct font, slight letter spacing */}
+                    {/*Trusted by professionals*/}
                     <p className="py-6 text-slate-700 mt-14 font-semibold text-xl md:text-2xl tracking-wide font-montserrat">
                         Trusted by professionals at top companies:
                     </p>

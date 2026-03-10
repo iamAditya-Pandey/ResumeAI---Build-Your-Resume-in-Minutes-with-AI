@@ -23,13 +23,18 @@ const Navbar = () => {
         dispatch(logout())
     }
     
-
   return (
     <div className='shadow bg-white'>
       <nav className='flex items-center justify-between max-w-7xl mx-auto px-4 py-3.5 text-slate-800 transition-all'>
+        
+        {/* Clean link that ONLY goes to your home screen */}
         <Link to='/'>
-            <img src="/logo.svg" alt="logo" className="h-11 w-auto" />
+            {/* Pure text logo - bypasses the SVG file completely so it cannot be cached or hijacked */}
+            <div className="text-2xl font-black tracking-tight text-slate-800">
+              ResumeAI<span className="text-violet-600">.</span>
+            </div>
         </Link>
+        
         <div className='flex items-center gap-4 text-sm'>
             <p className='max-sm:hidden'>Hi, {user?.name}</p>
             <button onClick={logoutUser} className='bg-white hover:bg-slate-50 border border-gray-300 px-7 py-1.5 rounded-full active:scale-95 transition-all'>Logout</button>
